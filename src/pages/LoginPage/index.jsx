@@ -14,8 +14,9 @@ const LoginPage = () =>{
     
 
     return (
+        <>
         <div id='login'>
-            <h1 className='title'>Login do Sistema</h1>
+            <h1 className='title'>Portal de Tarefas</h1>
             <p>{String(authenticated)}</p>
             <form className='form' onSubmit={handleSubmit}>
                 <div className='field'>
@@ -29,9 +30,11 @@ const LoginPage = () =>{
                 <div className='actions'>
                     <button type='submit'> Entrar </button>
                 </div>
+                <a href="/user">Criar Novo Usuário</a>
             </form>
-
         </div>
+        </>
+        
     );
 };
 
